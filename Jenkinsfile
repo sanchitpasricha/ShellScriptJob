@@ -14,7 +14,7 @@ pipeline {
         stage('Call Script') {
             steps {
                 sh 'chmod +x shellScript.sh'
-                sh '/shellScript.sh ${TOPIC_NAME} ${TARGET}'
+                bash '/shellScript.sh ${TOPIC_NAME} ${TARGET}'
             }
         }
     }
